@@ -6,7 +6,9 @@ Fire up Terminal, and run the following command:
 
 cd /Library/LaunchDaemons
 
+```
 sudo nano xampp.startapache.plist
+```
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -32,7 +34,9 @@ Save the file and exit nano (control+o, return, control+x).
 
 Now run the following terminal command:
 
+```
 sudo nano apachefriends.xampp.mysql.start.plist
+```
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
