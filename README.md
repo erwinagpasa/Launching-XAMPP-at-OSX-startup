@@ -70,5 +70,21 @@ sudo nano apachefriends.xampp.mysql.start.plist
 </plist>
 ```
 
+<h4>Update December 2022</h4>
+sudo chown root:wheel /Library/LaunchDaemons/xampp.startapache.plist
+sudo chmod 644 /Library/LaunchDaemons/xampp.startapache.plist
+sudo launchctl load -w /Library/LaunchDaemons/xampp.startapache.plist
+
+
+XAMPP will automatically start apache on startup, the LaunchDaemon can be modified if needed to start Apache, MySQL, ProFTPd.
+
+sudo chown root:wheel /Library/LaunchDaemons/apachefriends.xampp.mysql.start.plist
+sudo chmod 644 /Library/LaunchDaemons/apachefriends.xampp.mysql.start.plist
+sudo launchctl load -w /Library/LaunchDaemons/apachefriends.xampp.mysql.start.plist
+
+
+
+
+
 
 When you restart your computer the XAMPP Apache and MySQL services should start automatically. You can check this by launching XAMPP Control and checking that Apache and MySQL have green lights displayed next to them.
